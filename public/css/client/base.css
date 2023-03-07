@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--mainColor);
+    transition: var(--transition);
+
+}
+
+:root {
+
+    --menuWidth: calc(100% - 20px);
+    --leftColBackground: #fff;
+    /* --lightLeftColBackground: #f9f9f9; */
+    --lightLeftColBackground: #eae8e8;
+    --darkLeftColBackground: #22272b;
+    --mainColor: #2e9f3c;
+    --mainColor2: #5ea700;
+    --menuHover: #ffc107;
+    --pinkColor: #ffbda6;
+    --secondColor: #929292;
+    --accentColor1: #929292;
+    --accentColor2: #d80000;
+    --textColor: #4c4c4c;
+    --toastSuccessBg: #d1e7dd;
+    --toastSuccessCl: #0f5132;
+    --toastWarningBg: #fff3cd;
+    --toastWarningCl: #664d03;
+    --toastErrorBg: #f8d7da;
+    --toastErrorCl: #842029;
+    --toastSystemBg: #d3d3d4;
+    --toastSystemCl: #141619;
+    --txtColorW: #fff;
+
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --transition: all 0.5s linear;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+    /* // size */
+    --logo-height: 50px;
+
+
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --tablet-width: 600px;
+    --pc-width: 1024px;
+
+}
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+.title{
+    
+}
+.title a{
+    font-size: 22px;
+    font-weight: 700;
+}
+/* .swiper {
+    width: 100%;
+    height: 100% !important;
+}
+
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+} */
+.swiper-button-prev, .swiper-button-next {
+    /* right: auto; */
+    height: 60px;
+    width: 30px;
+    background: #f7f7f7;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    color: #707070;
+    border-radius: 50%;
+
+}
+.swiper-button-prev {
+    left: 0px;
+    border-radius: 0 60px 60px 0;
+
+}
+.swiper-button-next {
+    right: 0px;
+    border-radius: 60px 0 0 60px;
+
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+}
+
+.half-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px 100px 0 0;
+  /* transform: rotate(-45deg); */
+  background-color: #f00;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 20px;
+    letter-spacing: 0;
+    font-weight: 900;
+    font-variant: initial;
+    line-height: 1;
+    position: absolute;
+}
+.swiper-button-prev:after{
+    left: 20%;
+}
+.swiper-button-next:after{
+    right: 20% ;
+}
+.swiper-pagination-bullet{
+    border-radius:8px !important;
+    width: 24px;
+    height: 6px;
+
+}
+.swiper-pagination-bullet .swiper-pagination-bullet-active .swiper-pagination-bullet-active-main{
+    background: linear-gradient(90deg, var(--mainColor),var(--mainColor2)) !important
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    height: calc((100% - 30px) / 2) !important;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button{
+    font-size: inherit;
+  }
